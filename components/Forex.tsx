@@ -91,13 +91,13 @@ export default function Forex() {
 
 
   return (
-    <>
-      <h1 className="font-extrabold text-5xl md:text-6xl text-white mx-8 dark:text-purple-800">
+    <div className="md:mx-8 py-8 flex flex-col justify-center items-center">
+      <h1 className="font-extrabold text-5xl md:text-6xl text-white md:mx-8 dark:text-purple-800">
         1 BTC = 
         <span className="animate-pulse"> {amount && Number(amount).toLocaleString(undefined, {minimumFractionDigits: 2})} </span>
         {cur}
       </h1>
-      <h2 className="font-bold text-2xl text-white dark:text-blue-600">Bitcoin - {currencyName} price</h2>
+      <h2 className="font-bold text-2xl text-white dark:text-blue-600 leading-tight">Bitcoin - {currencyName} price</h2>
   
       <CurrencySelector selected={cur} onChange={(e: { target: { value: SetStateAction<string>; }; }) => setCurrency(e.target.value) } />
 
@@ -123,6 +123,6 @@ export default function Forex() {
         }       
       </button>
 
-    </>
+    </div>
   )
 }

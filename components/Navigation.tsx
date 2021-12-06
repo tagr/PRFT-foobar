@@ -35,7 +35,7 @@ const Navigation: React.FC<INavigationProps> = (props) => {
                     </Link>
         }
 
-        <div className="px-2 py-1 text-lg">
+        <div className="px-2 py-1 text-lg leading-tight">
             <Link href="/?go=home">
                 { !user 
                     ? props.title 
