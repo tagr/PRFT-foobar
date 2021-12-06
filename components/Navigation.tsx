@@ -13,14 +13,14 @@ const Navigation: React.FC<INavigationProps> = (props) => {
     const router = useRouter();
     
     return (
-    <nav className="flex gap-1 bg-gradient-to-r from-blue-700 via-purple-600 to-purple-900 dark:from-black dark:via-purple-900 dark:to-black font-bold px-4 py-4 text-white">
+    <nav className="flex gap-1 bg-gradient-to-r from-blue-700 via-purple-600 to-purple-900 dark:from-black dark:via-purple-900 dark:to-black font-bold py-4 text-white">
 
         {
             user?.app_metadata.provider === "github" 
                 && <Link href="/?go=home">
                         <img src={user?.user_metadata.avatar_url} 
                             title={user?.user_metadata.full_name} 
-                            className="drop-shadow-sm" 
+                            className="drop-shadow-sm ml-2" 
                             alt="github avatar"
                             width={40} 
                             height={40} 
@@ -45,7 +45,7 @@ const Navigation: React.FC<INavigationProps> = (props) => {
         </div>        
 
         { user && (<button
-            className="ml-auto"
+            className="ml-auto pr-2"
             onClick={ async () => {
                 const { error } = await supabase.auth.signOut();
                 if (error) return;

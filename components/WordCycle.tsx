@@ -13,7 +13,7 @@ const WordCycle: React.FC<IWordCycleProps> = (props) => {
   }, 2000);
 
   return (
-    <span className="animate-pulse px-8 text-4xl sm:text-8xl text-white dark:text-pink-400">
+    <span className="animate-pulse mx-8 text-4xl sm:text-8xl text-white dark:text-pink-400">
       {props.words[index]}
     </span>
   );

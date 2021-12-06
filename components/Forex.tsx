@@ -92,7 +92,7 @@ export default function Forex() {
 
   return (
     <>
-      <h1 className="font-extrabold text-6xl text-white px-8 dark:text-purple-800">
+      <h1 className="font-extrabold text-5xl md:text-6xl text-white mx-8 dark:text-purple-800">
         1 BTC = 
         <span className="animate-pulse"> {amount && Number(amount).toLocaleString(undefined, {minimumFractionDigits: 2})} </span>
         {cur}

@@ -30,11 +30,11 @@ export default function IndexPage() {
       title="PRFT-Foobar Next.js Hackathon - BTC Exchange Rates"
       metaDescription="by Andy Merhaut"
     >
-      <div className="flex h-screen justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 dark:from-gray-700 dark:via-black dark:to-gray-900">
-        <div className="px-8 py-8 h-full">
+      <div className="flex h-100 md:h-screen justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 dark:from-gray-700 dark:via-black dark:to-gray-900">
+        <div className="mx-8 py-8 h-full">
           <div className="flex flex-col justify-center items-center">
             <Image src="/images/btc.png" width={400} height={348} alt="Graphical depiction of Bitcoin" />
-            <h1 className="font-extrabold text-6xl text-white px-8">
+            <h1 className="font-extrabold text-6xl text-white mx-8">
               Get
               <span className="animate-pulse"> Bitcoin </span>
               exchange price
