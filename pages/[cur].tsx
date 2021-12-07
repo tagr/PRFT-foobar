@@ -20,7 +20,7 @@ export default function IndexPage() {
   return (
     <Layout
       title={`PRFT-Foobar Next.js Hackathon - BTC-${(cur as string)?.toUpperCase()} Exchange`}
-      className="flex sm:h-100 md:h-screen justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 dark:from-gray-700 dark:via-black dark:to-gray-900"
+      className="flex h-100 justify-center bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 dark:from-gray-700 dark:via-black dark:to-gray-900"
       metaDescription="by Andy Merhaut"
     >
       <div className="mx-8 py-8 h-full">
